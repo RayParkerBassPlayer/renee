@@ -1,0 +1,9 @@
+<h1><%="#{@user.name}'s Blog Posts!"%><h1> 
+
+<ul>
+
+<% @blogs.each do |blog| %>
+<li><%= blog.title %></li>
+<% end %>
+
+</ul>

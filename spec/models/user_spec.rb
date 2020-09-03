@@ -8,6 +8,8 @@ describe User do
       should validate_uniqueness_of(:email)
     end
 
-    it "has its relationships"
+    it "has its relationships" do 
+      should have_many(:blogs)
+    end 
   end
 end
