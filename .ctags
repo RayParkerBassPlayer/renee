@@ -1,0 +1,4 @@
+--exclude=node_modules 
+--exclude=public/assets 
+--exclude=vendor 
+--exclude=app/assets/javascripts
