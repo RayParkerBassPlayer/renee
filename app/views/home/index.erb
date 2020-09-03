@@ -1,1 +1,7 @@
 <h1>Renee!</h1>
+
+<ul>
+<%  @users.each do |user| %> 
+  <li><%= link_to(user.name, blogs_path).html_safe %></li>
+<% end %>
+</ul>
