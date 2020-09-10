@@ -10,22 +10,43 @@ ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/
 ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
 ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
 ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+Blog	app/models/blog.rb	/^class Blog < ApplicationRecord$/;"	c
+BlogsController	app/controllers/blogs_controller.rb	/^class BlogsController < ApplicationController$/;"	c
+CreateBlogs	db/migrate/20200903041416_create_blogs.rb	/^class CreateBlogs < ActiveRecord::Migration[6.0]$/;"	c
+CreateUsers	db/migrate/20200903031556_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[6.0]$/;"	c
+HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
 Renee	config/application.rb	/^module Renee$/;"	m
 SpecUtilities	spec/support/spec_utilities.rb	/^module SpecUtilities$/;"	m
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c
+__webpack_require__	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	function __webpack_require__(moduleId) {$/;"	f
+__webpack_require__.d	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.d = function(exports, name, getter) {$/;"	f
+__webpack_require__.n	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.n = function(module) {$/;"	f
+__webpack_require__.o	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };$/;"	f
+__webpack_require__.r	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.r = function(exports) {$/;"	f
+__webpack_require__.t	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.t = function(value, mode) {$/;"	f
 auth_header	spec/support/spec_utilities.rb	/^  def auth_header(user = nil)$/;"	f	class:SpecUtilities
 blows_up	spec/support/spec_utilities.rb	/^  def blows_up$/;"	f	class:SpecUtilities
+change	db/migrate/20200903031556_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	db/migrate/20200903041416_create_blogs.rb	/^  def change$/;"	f	class:CreateBlogs
 debug_print	spec/support/spec_utilities.rb	/^  def debug_print(thing, title = nil, print_path = false)$/;"	f	class:SpecUtilities
 debug_print_wrapper	spec/support/spec_utilities.rb	/^  def debug_print_wrapper(title = nil, print_path = true, &block)$/;"	f	class:SpecUtilities
 debug_response	spec/support/spec_utilities.rb	/^  def debug_response$/;"	f	class:SpecUtilities
 expect_success	spec/support/spec_utilities.rb	/^  def expect_success$/;"	f	class:SpecUtilities
 file_upload	spec/support/spec_utilities.rb	/^  def file_upload(file_name = nil, file_type = nil)$/;"	f	class:SpecUtilities
 gql	spec/support/spec_utilities.rb	/^  def gql(name_no_extension)$/;"	f	class:SpecUtilities
+hasOwnProperty	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };$/;"	m	class:return
 header	spec/support/spec_utilities.rb	/^  def header$/;"	f	class:SpecUtilities
+i	db/etc/reset_autoincrement_cols.sql	/^i TEXT;$/;"	v
+index	app/controllers/blogs_controller.rb	/^  def index$/;"	f	class:BlogsController
+index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
 log_in	spec/support/spec_utilities.rb	/^  def log_in(user = nil)$/;"	f	class:SpecUtilities
 module.exports	babel.config.js	/^module.exports = function(api) {$/;"	f
 payload	spec/support/spec_utilities.rb	/^  def payload$/;"	f	class:SpecUtilities
 plugins	postcss.config.js	/^  plugins: [$/;"	p	class:module.exports
+print_feedback	seeds.rb	/^def print_feedback(message = "", options = {:banner_char => "-"})$/;"	f
+print_feedback	spec/seeds.rb	/^def print_feedback(message = "", options = {:banner_char => "-"})$/;"	f
 response_code	spec/support/spec_utilities.rb	/^  def response_code$/;"	f	class:SpecUtilities
+return	public/packs-test/js/application-600c501035d6e5bc15e5.js	/^\/******\/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };$/;"	c
 saop	spec/support/spec_utilities.rb	/^  def saop$/;"	f	class:SpecUtilities
 select_sidebar_subitem	spec/support/spec_utilities.rb	/^  def select_sidebar_subitem(title, subitem)$/;"	f	class:SpecUtilities
 ssoi	spec/support/spec_utilities.rb	/^  def ssoi$/;"	f	class:SpecUtilities
