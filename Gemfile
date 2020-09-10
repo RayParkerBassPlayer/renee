@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]  gem "pry-byebug"
 end
 
 group :test do
