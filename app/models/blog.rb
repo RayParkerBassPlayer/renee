@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
   belongs_to :user
 
   def self.whitelisted_attributes
-    [:title, :body, :body]
+    [:title, :body, :body, :user_id]
   end
 end
   

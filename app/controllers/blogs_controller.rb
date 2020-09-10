@@ -14,9 +14,11 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(params.permitted_params(Blog.whitelisted_attributes))
+    @blog = Blog.new(params[:blog].permit(Blog.whitelisted_attributes))
 
     if @blog.save
+      # flash[:errors]
+      render :new
     else
     end
   end
