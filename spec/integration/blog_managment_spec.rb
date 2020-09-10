@@ -27,7 +27,7 @@ describe "blog_management" do
     expect(page).to have_content(blog.body)
   end
 
-  it "allows creation of a blog", :focus do
+  it "allows creation of a blog" do
     user = create(:user)
     blog_attributes = build(:blog)
 
@@ -36,7 +36,7 @@ describe "blog_management" do
 
     # Now create a new blog
     click_link "New Blog"
-    saop
+
     fill_in "Title", :with => blog_attributes.title
     fill_in "Body", :with => blog_attributes.body
     click_button "Create Blog"

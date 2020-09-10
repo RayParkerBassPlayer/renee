@@ -16,10 +16,11 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(params[:blog].permit(Blog.whitelisted_attributes))
 
-    if @blog.save
-      # flash[:errors]
+    if !@blog.save
+      @user = User.find(@blog.user_id)
       render :new
     else
+      redirect_to blog_path(@blog, :user_id => @blog.user_id)
     end
   end
 
