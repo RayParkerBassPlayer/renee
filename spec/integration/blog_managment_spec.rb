@@ -16,12 +16,12 @@ describe "blog_management" do
     user = create(:user)
     blogs = create_list(:blog, 10, :user => user)
     blog = blogs.first
-
+  
     visit root_path
 
     click_link user.name
     click_link blog.title
-
+  
     expect(current_path).to eq blog_path(blog)
     expect(page).to have_content(blog.title)
     expect(page).to have_content(blog.body)
